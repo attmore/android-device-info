@@ -34,7 +34,7 @@ public class DeviceInfoParser {
 								String[] values = line.split("=");
 								DeviceProperties.DEVICE_PROPERTIES.get(j).setValue(values.length>1?values[1]:"");
 								if(DEBUG){
-									Log.d("hu.zhuren.adi","label="+ DeviceProperties.DEVICE_PROPERTIES.get(j).getLabel() +" value=" +DeviceProperties.DEVICE_PROPERTIES.get(j).getLabel());
+									Log.d("hu.zhuren.adi","label="+ DeviceProperties.DEVICE_PROPERTIES.get(j).getLabel() +" value=" +DeviceProperties.DEVICE_PROPERTIES.get(j).getValue());
 								}
 								break;
 							}
